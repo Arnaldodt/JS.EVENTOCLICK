@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: auto;
+}
+.container{
+    width: 700px;
+    margin: 0 auto;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+article{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    background-color: green;
+}
+article section{
+    margin: 10px 20px;
+    padding: 10px;
+
+    display:flex;
+    flex-wrap:wrap;
+}
+article section p{
+    padding-bottom: 10px;
+    text-align: center;
+}
+article section p.T1{
+    width: 40%;
+}
+article section p.T2{
+    width: 60%;
+    text-align: left;
+}
+article section p.T3{
+    width: 100%;
+    text-align: left;
+}
+
+article section.ancho1{ /*mas 40 de margin*/ 
+    width: 390px;
+    /* height: 200px; */
+    background-color: red;
+}
+article section.ancho2{ /*mas 40 de margin*/
+    width: 190px;
+    /* height: 200px; */
+    background-color: red;
+}
+
+input[type=button]{
+    width: 100px;
+    height: 35px;
+}
+@media (max-width:700px){
+    .anchoNormal{
+        width: 100%;
+    }
+    article section.anchoNormal{
+        width: 100%;
+        background-color: yellow;
+    }
+}
